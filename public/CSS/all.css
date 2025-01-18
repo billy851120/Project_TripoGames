@@ -1,0 +1,1561 @@
+.text_color1 {
+    color: #272443;
+}
+
+body,
+html {
+    /* font-family: "Wix Madefor Text", sans-serif; */
+    font-family: "Wix Madefor Display", sans-serif;
+    background-color: #F6F4F0;
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 1.5s;
+
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+}
+
+
+.fade-in-down {
+    transform: translateY(25%);
+    opacity: 0;
+    transition:
+        opacity 1.5s,
+        transform 1.5s;
+
+}
+
+.fade-in-down.visible {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fade-in-down2 {
+    transform: translateY(80%);
+    transition: transform 1.5s ease-in-out;
+
+}
+
+.fade-in-down2.visible {
+    transform: translateY(3px);
+}
+
+.fade-in-left {
+    transform: translateX(-20%);
+    opacity: 0;
+    transition:
+        opacity 1.5s,
+        transform 2.5s;
+
+}
+
+.fade-in-left.visible {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+.fade-in-right {
+    transform: translateX(20%);
+    opacity: 0;
+    transition:
+        opacity 1.5s,
+        transform 2.5s;
+
+}
+
+.fade-in-right.visible {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+
+
+
+.Navbar {
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+
+}
+
+.GameNav {
+    z-index: 99;
+    display: flex;
+    pointer-events: auto;
+
+}
+
+.GameNav.visible {
+    transform: translateY(0%);
+    opacity: 1;
+    transition:
+        opacity .1s,
+        transform .9s ease-in-out;
+}
+
+.GameNav.close {
+    z-index: 99;
+    display: flex;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: opacity .4s .3s;
+    pointer-events: none;
+}
+
+.GameNavR__list {
+
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.1);
+    border-radius: 0px 0px 9px 9px;
+}
+
+.GameNavR__item {
+    background-color: #fff;
+
+}
+
+.GameNavR__item:first-child {
+    border-radius: 0px 0px 0px 9px;
+
+}
+
+.GameNavR__item:last-child {
+    border-radius: 0px 0px 9px 0px;
+
+}
+
+.GameNavR__item--active {
+    background-color: #DA392B;
+
+}
+
+.GameNavR__item--active>a {
+    color: #fff !important;
+}
+
+.GameNavR__item:hover:not(.GameNavR__item--active, .GameNavR__item--Dropdowns) {
+    animation-name: GameNavR__item--animation;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.GameNavR__item:hover:not(.GameNavR__item--active, .GameNavR__item--Dropdowns) a {
+    animation-name: GameNavR__item--animation2;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.GameNavR__item>a {
+    display: inline-block;
+    padding: 23px 29px;
+    color: rgb(39, 36, 67);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.GameNavR__itemUL {
+    background: #fff;
+    width: max-content;
+    text-align: center;
+    position: absolute;
+    box-shadow: 3px 3px 10px #ddcbc9;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    padding: 0;
+    border-radius: 10px;
+    display: none;
+}
+
+.GameNavR__itemUL li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(39, 36, 67);
+}
+
+.GameNavR__item--Dropdowns {
+    position: relative;
+}
+
+.GameNavR__itemUL__li {
+    padding: 8px 11px;
+}
+
+.GameNavR__itemUL__li:hover {
+    animation: GameNavR__item--animation;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.GameNavR__itemUL__li:hover a {
+    animation: GameNavR__item--animation2;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.GameNavR__itemUL__li:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.GameNavR__itemUL__li:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.GameNavR__item--Dropdowns:hover>.GameNavR__itemUL {
+    display: block;
+    animation: GameNavR__Dropdowns--animation;
+    animation-duration: 0.3s;
+}
+
+/* .banner__col {
+    background-image: url(../IMG/c837a6_aa803204cef842e0b9ad7d820e64f77c~mv2.jpg);
+    background-size: contain;
+    background-size: auto auto;
+    background-position: center center;
+    min-height: 800px;
+    height: auto;
+    width: 100%;
+} */
+.banner_BG {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner_BG img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.GameNavR__item--Dropdowns::after {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    padding: 10px 0;
+    transform: translateY(50%);
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+
+}
+
+.About__Explore {
+    max-width: 235px;
+    width: 100%;
+    height: 313.333px;
+    position: relative;
+    padding: 0;
+    border-radius: 0;
+    margin: 0px 19px;
+}
+
+.About__ExploreItem {
+    width: 100%;
+    height: 100%;
+}
+
+.About__Explore::after {
+    display: block;
+    opacity: 1;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(218, 57, 43, 0), rgba(218, 57, 43, 0.8));
+    border-radius: 15px;
+    visibility: visible;
+    transition: opacity 0.4s ease-in, visibility 0.4s ease-in;
+
+}
+
+.About__ExploreBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.About__ExploreBG img {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    transition: transform 2s cubic-bezier(0.1, 0.4, 0.09, 0.99);
+}
+
+.About__ExploreINFO {
+    color: #fff
+}
+
+.About__ExploreTX {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    visibility: visible;
+    transition: opacity 0.4s ease-in, visibility 0.4s ease-in;
+}
+
+.About__Explore:hover .About__ExploreTX {
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.About__Explore:hover::after {
+    opacity: 0;
+    visibility: hidden;
+
+    background-color: transparent;
+    /* display: none; */
+}
+
+.About__Explore:hover .About__ExploreBG img {
+    transform: scale(1.1);
+}
+
+.About__ExploreBG2 {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 2s cubic-bezier(0.1, 0.4, 0.09, 0.99);
+}
+
+.About__ExploreBG2 a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #3a2027;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About__Explore:hover .About__ExploreBG2 {
+    transform: scale(1.1);
+}
+
+.About2__More {
+    background-color: #DA392B;
+    border-radius: 9px;
+    outline: none;
+    transition: outline .3s;
+    transition: background-color .3s;
+}
+
+.About2__More a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 22px 29px;
+
+    transition: color .3s;
+}
+
+.About2__More:hover {
+    background-color: transparent;
+    outline: 1px solid #000;
+}
+
+.About2__More:hover a {
+    color: #212529;
+}
+
+.About2__img {
+    border-radius: 16px;
+    position: relative;
+
+}
+
+.About2__img img {
+    border-radius: 16px;
+    position: relative;
+
+}
+
+.About2__imgBG::after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    background-color: rgba(218, 58, 43, 0.219);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .4s;
+    border-radius: 16px;
+}
+
+.About2__imgBG:hover::after {
+    opacity: 1;
+}
+
+.About2__SmallImg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    transform: translate(-90px, 44px);
+}
+
+.OurGames__BG {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.OurGames__BG img {
+    width: 1261px;
+    height: 1181px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.OurGames__container {
+    max-width: 1261px;
+    width: 100%;
+    height: 1181px;
+}
+
+.OurGames__containerItem {
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 45px 17px;
+    width: 390px;
+    box-shadow: 3px 3px 10px #ddcbc9;
+    position: relative;
+    z-index: 9;
+}
+
+.OurGames__containerItemIMG {
+    border-radius: 16px;
+    border: 6px solid #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #ddcbc9;
+    margin-right: 27px;
+}
+
+.JoinTeam__topBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.JoinTeam__topBG img {
+    transform: translate3d(0px, 98px, 0px);
+
+}
+
+.JoinTeam__topItem {
+    min-height: 720px;
+}
+
+.JoinTeam__topTxT {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    width: 100%;
+    padding: 0px 100px;
+    margin-top: 120px;
+}
+
+.JoinTeam__topLink {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 22px 16px;
+    background-color: #FCFF72;
+    transition: background-color .3s;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.JoinTeam__topLink:hover {
+    background-color: #FFF;
+}
+
+.JoinTeam__BottomBG {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../IMG/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg);
+}
+
+.JoinTeam__BottomItem {
+    min-height: 600px;
+}
+
+.JoinTeam_form1 {
+    width: 438px;
+    /* height: 647px; */
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    border-radius: 24px;
+    padding: 26px 30px;
+    transform: translateY(-210px);
+}
+
+.JoinTeam_input label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.JoinTeam_input input {
+    border: 1px solid #272443;
+    border-radius: 9px;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.mb-6 {
+    margin-bottom: 65px;
+}
+
+.JoinTeam_input textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #272443;
+    border-radius: 9px;
+    padding: 10px 10px;
+    resize: none;
+}
+
+.JoinTeam_form1_buttom button {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 9px;
+    width: 100%;
+    background-color: #272443;
+    padding: 13px 0px;
+    border: none;
+    transition: background-color .3s;
+}
+
+.JoinTeam_form1_buttom button:hover {
+    background-color: #DA392B;
+
+}
+
+.JoinTeam_form2 {
+    width: 388px;
+    border-radius: 24px;
+    padding: 26px 30px;
+    color: #fff;
+    background-color: #DA392B;
+
+}
+
+.JoinTeam_form2 .JoinTeam_input input {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+}
+
+.JoinTeam_form2 .JoinTeam_input input:focus {
+    /* border: none; */
+    outline: none;
+}
+
+.JoinTeam_form2 .JoinTeam_input input:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+#subscribe_me {
+    display: none;
+}
+
+.JoinTeam_form2_checkBox label {
+    padding-left: 23px;
+    line-height: 1.4;
+    cursor: pointer;
+    user-select: none;
+}
+
+.JoinTeam_form2_checkBox label::before {
+    content: ' ';
+    top: 50%;
+    left: 1px;
+    position: absolute;
+    outline: 1px solid #fff;
+    width: 13px;
+    height: 13px;
+    transform: translateY(-50%);
+}
+
+.JoinTeam_form2_checkBox label::after {
+    display: none;
+    content: ' ';
+    top: 50%;
+    left: 5px;
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 9;
+    transform: translateY(-64%) rotate(45deg);
+
+}
+
+.JoinTeam_form2_checkBox {
+    position: relative;
+}
+
+.JoinTeam_form2_checkBox input[type=checkbox]:checked+label::after {
+    display: block;
+}
+
+.JoinTeam_form2_button {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 13px 30px;
+    background-color: #FCFF72;
+    transition: background-color .3s;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.JoinTeam_form2_button:hover {
+    background-color: #fff;
+}
+
+.footer__ul h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer__ul>a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(117, 117, 117);
+    padding: 7px 0;
+}
+
+.footer__ul>p {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(117, 117, 117);
+    padding: 7px 0;
+}
+
+.footerl__line {
+    height: 5px;
+    /* margin-left: 190px; */
+    /* left: 0; */
+    min-width: inherit;
+    display: block;
+    width: calc(100% - 190px - 190px);
+    border-top: 1px solid #000;
+    margin: 41px 0;
+}
+
+
+
+.Games_banner_Kipon {
+    background-image: url(../IMG/c837a6_8731dc6786664fda8dca78196a46ad5e~mv2.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 687px;
+    position: relative;
+
+}
+
+.Games_banner_Robotrix {
+    background-image: url(../IMG/c837a6_d618c25190414f7abeae106864d8a84e~mv2.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 687px;
+    position: relative;
+
+}
+
+.Games_banner_TreasureBox {
+    background-image: url(../IMG/c837a6_eb60340e15f54022835c97b00104f933~mv2.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 687px;
+    position: relative;
+
+}
+
+.Game_content1 {
+    top: 0;
+    left: 7%;
+    position: absolute;
+    width: 672px;
+    box-sizing: border-box;
+    transform: translateY(-22%);
+}
+
+.Game_content2 {
+    background: #fff;
+    border-radius: 23px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 53px 54px;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.1);
+}
+
+.Game_contentIMG {
+    border: 6px solid #fff;
+    border-radius: 25px;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.1);
+
+}
+
+.Game_contentIMG img {
+    border-radius: 20px;
+
+}
+
+.Game_mainIMG {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Game_mainIMG img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 23px;
+    transform: scale(1);
+    transition: transform 2s cubic-bezier(0.1, 0.4, 0.09, 0.99);
+}
+
+.Game_mainIMG:hover img {
+    transform: scale(1.1);
+}
+
+.Game_reviewsLOGO {
+    max-width: 250px;
+    width: 100%;
+    background-color: #fff;
+    padding: 28px 0;
+    border-radius: 20px;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.1);
+    margin-right: 54px;
+}
+
+.reviewsLOGO1 {
+    width: 178px;
+    background-color: #DA392B;
+    padding: 3px 4px;
+    border-radius: 22px;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.1);
+
+
+}
+
+.reviewsLOGO2 {
+    background-color: #fff;
+    padding: 3px 0;
+    border-radius: 62px;
+
+}
+
+.Game_reviewsTXT {
+    width: 100%;
+    height: 357px;
+    outline: 1px solid #272443;
+    box-sizing: border-box;
+}
+
+.Game_reviewsBox {
+    height: 100%;
+    width: 33.333333%;
+    padding: 0 0;
+    padding: 93px 53px 0;
+}
+
+.Challenge {
+    min-height: 980px;
+    background-color: rgba(218, 58, 43, 1);
+    position: relative;
+
+}
+
+.ChallengeBG_Kipon {
+    background-image: url(../IMG/c837a6_cff34240addf4fa4991328bd1d51dde0~mv2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.ChallengeBG_Robotrix {
+    background-image: url(../IMG/c837a6_e67900669f4140a6a4ff5a0f95533aa1~mv2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.ChallengeBG_TreasureBox {
+    background-image: url(../IMG/c837a6_3544d45db25946baa2db2e29566c64f5~mv2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.Challenge__content {
+    z-index: 9;
+    width: 796px;
+}
+
+.Challenge__content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.Challenge__content p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 7rem;
+}
+
+.playNow {
+    background: #fff;
+    padding: 33px 0;
+    margin-top: 58px;
+    border-radius: 24px;
+    width: 568px;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.1);
+
+}
+
+.playNow h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.Careers_HelpUs {
+    padding-top: 87px;
+}
+
+
+.Job_Openings .container {
+    padding: 0 41px;
+}
+
+.Job_Openings .container .row {
+    background: #DA392B;
+    padding: 0 94px 10px;
+}
+
+.Job_Openings h1 p {
+    color: #fff;
+}
+
+.Job_content {
+    padding: 0 19px;
+    color: #fff
+}
+
+.Job_content img {
+    border-radius: 24px;
+    transform: scale(1);
+    transition: transform 2s cubic-bezier(0.1, 0.4, 0.09, 0.99);
+}
+
+.Job_content img:hover {
+    transform: scale(1.1);
+}
+
+.Job_content .Job_contentBtn a {
+    background-color: rgb(39, 36, 67);
+    padding: 14px 46px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.Job_contentBtn {
+    margin: 24px 0;
+}
+
+.Job_contentBtn .Job_contentBtn a::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: 0;
+    content: " ";
+}
+
+.Job_content .Job_contentBtn a:hover::after {
+    opacity: 1;
+}
+
+.Careers_SendUs .container {
+    padding: 0 41px;
+}
+
+.Careers_SendUs .container .row {
+    position: relative;
+    padding: 0 94px 10px;
+    background-color: rgba(39, 36, 67);
+}
+
+.Careers_SendUsBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-image: url(../IMG/c837a6_0d97f82987d44ed49ee37d4150d890a5~mv2.jpg);
+}
+
+
+
+.Careers_SendUsBtn button {
+    background-color: #FCFF72;
+    padding: 20px 28px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.Careers_SendUsBtn button:hover {
+    background: #fff;
+}
+
+.About_WeAre {
+    padding-top: 100px;
+}
+
+.About_WeAre .container {
+    padding: 0 32px;
+}
+
+.About_WeAre .container .row {
+    padding: 119px 0;
+}
+
+.About_WeAreContent {
+    width: 800px;
+}
+
+.About_paragraphIMG {
+    padding: 0;
+    width: 40%;
+    overflow: hidden;
+}
+
+.About_paragraphIMG img {
+    width: 120%;
+    height: 100%;
+}
+
+.About_paragraph_TXT {
+    width: 60%;
+    background-color: #DA392B;
+    box-sizing: border-box;
+    padding: 0 0;
+
+}
+
+
+.About_paragraph_TXT p {
+    color: #fff;
+    font-size: 1.09rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.About_WhatWeBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-image: url(../IMG/c837a6_95872ebd9e144f399cf045b105f9802b~mv2.jpg);
+    opacity: 0.15;
+}
+
+.About_WhatWe {
+    position: relative;
+    min-height: 860px;
+    min-width: 980px;
+    box-sizing: border-box;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.About_WhatWe_Content {
+    background: #fff;
+    padding: 43px 34px;
+    border-radius: 18px;
+    position: relative;
+    z-index: 9;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.1);
+
+}
+
+.About_WhatWe_Content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #DA392B;
+
+}
+
+.About_WhatWe_Content p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.About_WhatWe_Meet {
+    background-color: #272443;
+    margin: 0 auto;
+    width: calc(100% - 100px - 100px);
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+.About_WhatWe_Meet h1 {
+    padding: 100px 0;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+
+.Meet_IMG {
+    width: 176px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 23px;
+}
+
+.Meet_IMG-wrapper::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    background-color: rgba(218, 58, 43, 0.219);
+    opacity: 0;
+    transition: opacity 2s cubic-bezier(0.1, 0.4, 0.09, 0.99);
+
+}
+
+.Meet_IMG-wrapper:hover::after {
+    opacity: 1;
+}
+
+
+.Meet_IMG img {
+    width: 100%;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: transform 2s cubic-bezier(0.1, 0.4, 0.09, 0.99);
+
+}
+
+.Meet_IMG:hover img {
+    transform: scale(1.1);
+
+}
+
+.Meet_TXT {
+    text-align: center;
+    color: #FFF;
+    margin-top: 10px;
+}
+
+.Meet_TXT h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.Meet_TXT small {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.About_OurOffices {
+    position: relative;
+    background: rgb(218, 57, 43);
+}
+
+.About_OurOfficesBG {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../IMG/c837a6_1339587ce8bc4864b69df4490dc2de16~mv2.jpg);
+    opacity: 0.3;
+}
+
+.About_OurOfficesL {
+    min-height: 802px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+
+.About_OurOfficesL h6 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.About_OurOfficesL h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 31px;
+}
+
+.About_OurOfficesL p {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.About_OurOfficesR {
+    min-height: 802px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+
+.About_OurOfficesR_content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 143px 40px 40px;
+    position: relative;
+}
+
+.About_OurOfficesR_btn {}
+
+.About_OurOfficesR_btn a {
+    background: #272443;
+    padding: 23px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background .3s;
+}
+
+.About_OurOfficesR_btn a:hover {
+
+    background: rgb(218, 57, 43);
+
+}
+
+.About_OurOfficesR_IMG {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%;
+    transform: translateY(-33%);
+
+}
+
+.QA_TesterBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    opacity: 0.4;
+}
+
+.QA_TesterBG img {
+    width: 100%;
+    height: 875px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.QA_Tester {
+    background-color: rgb(39, 36, 67);
+    position: relative;
+    height: 875px;
+
+}
+
+.QA_TesterTXT {
+    position: relative;
+    z-index: 9;
+    width: 763px;
+    margin-top: 175px;
+    color: #fff;
+}
+
+.QA_TesterTXT h6 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.QA_TesterTXT h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 36px;
+
+}
+
+.QA_TesterTXT small {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.QA_TesterTXT_btn a {
+    text-decoration: none;
+    background: #FCFF72;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: background .5s;
+}
+
+.QA_TesterTXT_btn a:hover {
+    background: #fff;
+}
+
+.QA_content {
+    position: relative;
+    z-index: 9;
+    margin-top: -280px;
+}
+
+.QA_contentL {
+    padding: 150px 84px;
+    background-color: #DA392B;
+    color: #fff;
+}
+
+.QA_contentL h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.QA_contentL p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.QA_contentR {
+    padding: 150px 84px;
+    background-color: #fff;
+    color: #272443;
+
+}
+
+.QA_contentR h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.QA_contentR p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.ApplyNow {
+    visibility: hidden;
+    background-color: #272443;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    z-index: 99;
+    padding: 0px 50px;
+    transform: translateX(100%);
+    transition: transform .5s cubic-bezier(1, .06, .83, .67);
+}
+
+.ApplyNow.active {
+    visibility: visible;
+    transform: translateX(0%);
+
+}
+
+
+.ApplyNow_top {
+    padding: 60px 0;
+    color: #fff;
+}
+
+.ApplyNow_top h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.ApplyNow_top p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.ApplyNow_form {
+    width: 500px;
+    height: 665px;
+    padding: 24px 25px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.ApplyNow_input label {
+    color: #272443;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.ApplyNow_input input {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #272443;
+    border-radius: 7px;
+    margin-bottom: 35px;
+
+}
+
+.ApplyNow_input textarea {
+    margin-bottom: 35px;
+
+}
+
+.select-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 35px;
+
+
+}
+
+.ApplyNow_selected {
+    border: 1px solid #272443;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: transparent;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.ApplyNow_selected_items {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    background-color: #fff;
+    border: 1px solid #272443;
+    width: 100%;
+    z-index: 9;
+    display: none;
+    padding: 10px 0;
+
+}
+
+.ApplyNow_selected_items div {
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 14px 23px;
+    cursor: pointer;
+}
+
+.ApplyNow_selected_items div:hover {
+    background-color: #F2F2F4;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 16px;
+}
+
+.ApplyNow_selected.active+.ApplyNow_selected_items {
+    display: block;
+}
+
+.select-arrow.active .arrow--up {
+    display: block;
+}
+
+.select-arrow.active .arrow--down {
+    display: none;
+}
+
+
+.select-arrow .arrow--down {
+    display: block;
+}
+
+.select-arrow .arrow--up {
+    display: none;
+}
+
+.ApplyNow_selected_items div.selected_option {
+    background: #9391A1;
+}
+
+.ApplyNow_input textarea {
+    display: block;
+    width: 100%;
+    height: 92px;
+    border-radius: 7px;
+    border: 1px solid #272443;
+    outline: none;
+    resize: none;
+
+}
+
+.ApplyNow_submit button {
+    text-align: center;
+    color: #fff;
+    background-color: #DA392B;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.ApplyNow_submit button:hover {
+    color: #272443;
+    background-color: #F6F4F0;
+    border: 1px solid #272443;
+
+}

@@ -1,0 +1,30 @@
+@keyframes GameNavR__item--animation {
+    0% {
+        background-color: #fff;
+    }
+
+    100% {
+        background-color: #DA392B;
+
+    }
+}
+
+@keyframes GameNavR__item--animation2 {
+    0% {
+        color: rgb(39, 36, 67);
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes GameNavR__Dropdowns--animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

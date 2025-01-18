@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripoGames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+
+        @import url(../public/CSS/reast.css);
+        @import url(../public/CSS/animation.css);
+        @import url(../public/CSS/all.css);
+    </style>
+</head>
+
+<body>
+
+    <div class="Navbar GameNav w-100" style="padding: 0px 93px; position :fixed">
+        <div class="d-flex GameNavL align-items-center" style="background-color: #DA392B;  border-radius: 0 0 9px 9px;">
+            <a style="
+                            text-decoration: none;
+                            color: #fff;
+                            padding: 18px 22px;
+                            font-size: 1.2rem;
+                            font-weight: 800;" href="./TripoGames.html">
+                Tripo Games
+            </a>
+        </div>
+        <div style="margin-left: auto;" class="nav GameNavR justify-content-end">
+            <nav>
+                <ul class="d-flex GameNavR__list">
+                    <li class="GameNavR__item GameNavR__item--active"><a href="#">Home</a></li>
+
+                    <li class="GameNavR__item GameNavR__item--Dropdowns" style="font-size: 1.1rem; ">
+                        <a style="cursor: default;" href="#">Game</a>
+                        <ul class="GameNavR__itemUL">
+                            <li class="GameNavR__itemUL__li"><a href="./Games_Kipon.html">Kipon</a></li>
+                            <li class="GameNavR__itemUL__li"><a href="./Games_Robotrix.html">Robotrix</a></li>
+                            <li class="GameNavR__itemUL__li"><a href="./Games_TreasureBox.html">Treasure Box</a></li>
+                        </ul>
+                    </li>
+                    <li class="GameNavR__item"><a href="./Careers.html">Careers</a></li>
+                    <li class="GameNavR__item"><a href="./About.html">About</a></li>
+                    <li class="GameNavR__item"><a href="#JoinTeam_form">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container-fluid">
+            <div class="row" style=" position: relative;">
+                <div style="overflow: hidden;padding: 0; position: absolute; top: 0; width: 100%; height: 100%;">
+                    <div id="banner_BG" class="banner_BG">
+                        <img src="../public/IMG/c837a6_aa803204cef842e0b9ad7d820e64f77c~mv2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col d-flex flex-column justify-content-center "
+                    style="padding: 0px 93px; min-height: 800px;">
+                    <div class="fade-in-element" style="margin-bottom: 44px; z-index: 9;">
+                        <h1 style="font-size: 5rem; font-weight: 900; color: #272443;margin-bottom: 11px;">Made to Be
+                            Played</h1>
+                        <p style="color: #272443;font-size: 1.44rem;font-weight: 500;">The Very Best
+                            in Mobile Gaming
+                        </p>
+                    </div>
+                    <div class="d-flex flex-row" style="z-index: 9;">
+                        <div style="margin-right: 15px;"><a href="#"><img src="../public/IMG/apple.png" alt=""></a>
+                        </div>
+                        <div><a href="#"><img src="../public/IMG/Google (1).png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="About">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center"
+                style="margin: 20px 0; padding: 0px 85px;">
+                <div class="col  About__Explore">
+                    <div class="About__ExploreTX d-flex flex-column justify-content-end">
+                        <div style="padding: 30px;box-sizing: border-box; cursor: default;">
+                            <div style="font-weight: 900; margin-bottom: 4px; " class="About__ExploreINFO">
+                                <span style="font-size: 1.2rem;">Kipon</span>
+                            </div>
+                            <div class="About__ExploreINFO">
+                                <span style="font-size: 1rem;">Casual - Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="About__ExploreBG">
+                        <a href="./Games_Kipon.html">
+                            <img src="../public/IMG/c837a6_d5b3b2009d894fa2932bc20684b2a93d~mv2.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col  About__Explore">
+                    <div class="About__ExploreTX d-flex flex-column justify-content-end">
+                        <div style="padding: 30px;box-sizing: border-box; cursor: default;">
+                            <div style="font-weight: 900; margin-bottom: 4px; " class="About__ExploreINFO">
+                                <span style="font-size: 1.2rem;">Robotrix</span>
+                            </div>
+                            <div class="About__ExploreINFO">
+                                <span style="font-size: 1rem;">RPG - Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="About__ExploreBG">
+                        <picture>
+                            <a href="./Games_Robotrix.html">
+                                <img src="../public/IMG/c837a6_bf93fe6ee32a41b2b69211460f928b15~mv2.jpg" alt="">
+                            </a>
+                        </picture>
+                    </div>
+
+                </div>
+                <div class="col  About__Explore">
+                    <div class="About__ExploreTX d-flex flex-column justify-content-end">
+                        <div style="padding: 30px;box-sizing: border-box;cursor: default;">
+                            <div style="font-weight: 900; margin-bottom: 4px; " class="About__ExploreINFO">
+                                <span style="font-size: 1.2rem;">Treasure Box</span>
+                            </div>
+                            <div class="About__ExploreINFO">
+                                <span style="font-size: 1rem;">Adventure - Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="About__ExploreBG">
+                        <picture>
+                            <a href="./Games_TreasureBox.html">
+                                <img src="../public/IMG/c837a6_f49b2d5464854cc18b19c7e183d05e2c~mv2.jpg" alt="">
+                            </a>
+                        </picture>
+                    </div>
+
+                </div>
+                <div class="col  About__Explore">
+                    <div class="About__ExploreBG  d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #FCFD71;">
+                        <div class="mb-1 About__ExploreBG2" style="cursor: pointer;">
+                            <a href="#Our_Games">
+                                Explore Our <br>Games<br>↓
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="About2 mt-5" style="margin-bottom: 100px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" d-flex flex-column justify-content-center align-items-center text-center">
+                    <h6 class="fade-in-element"
+                        style="color: #212529; font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem;">
+                        About Tripo
+                    </h6>
+                    <h1 class="fade-in-element" style="color: #212529;font-size: 3rem; font-weight: 900;">
+                        Your Source for Mobile <br>Entertainment
+                    </h1>
+                    <div
+                        style="color: #212529; width: 720px; margin-top: 1.5rem; margin-bottom: 1.8rem; font-weight: 500;">
+                        <p class="fade-in-element" style="color: #212529; font-size: 1.1rem; line-height: 1.7;">I'm a
+                            paragraph. Click here to
+                            add your own text
+                            and edit me. It’s
+                            easy. Just click “Edit
+                            Text”
+                            or
+                            double click me to add your own content and make changes to the font. I’m a great place for
+                            you
+                            to
+                            tell a story and let your users know a little more about you.</p>
+                    </div>
+                    <div style="margin-bottom: 3.3rem;" class="About2__More ">
+                        <a href="./About.html">Learn More</a>
+                    </div>
+                    <div class="About2__img ">
+                        <div class="About2__imgBG fade-in-down">
+                            <img class="d-block " src="../public/IMG/shutterstock_1535881442_edited.jpg" alt="">
+                        </div>
+                        <div class="About2__SmallImg fade-in-element">
+                            <img src="../public/IMG/shutterstock_1768049210.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="OurGames">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="Our_Games" class="d-flex flex-column justify-content-center align-items-center text-center"
+                    style="margin: 100px 0;">
+                    <h1 class="text_color1 fade-in-element"
+                        style="font-size: 3rem;font-weight: 900;margin-bottom: 2rem;">Our Games</h1>
+                    <div>
+                        <p class="text_color1 fade-in-element"
+                            style="font-size: 1.1rem;font-weight: 500;width: 720px;line-height: 1.6;">I'm a paragraph.
+                            Click here to add your own text and edit me. I’m a great
+                            place for you to tell a
+                            story and let your users know a little more about you.</p>
+                    </div>
+                </div>
+                <div class="OurGames__container d-flex flex-column justify-content-between "
+                    style="position: relative; margin-bottom: 100px; margin-left: auto; margin-right: auto;">
+                    <div class="OurGames__BG">
+                        <img src="../public/IMG/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.png" alt="">
+                    </div>
+                    <div class="d-flex">
+                        <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+                            <div
+                                class="fade-in-left OurGames__containerItem d-flex flex-column justify-content-center align-items-center">
+                                <div class=" d-flex  align-items-center " style="width: 280px;margin-bottom: 38px;">
+                                    <a href="#">
+                                        <div class="OurGames__containerItemIMG">
+                                            <img src=" ../public/IMG/shutterstock_1811519149.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_color1"
+                                            style="font-size: 1.2rem;font-weight: 800;margin-bottom: 8px;">Kipon</h6>
+                                        <p class="text_color1" style="font-size: 1rem;font-weight: 300;">Casual - Free
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="width: 280px;margin-bottom: 38px;">
+                                    <p style="font-size: 0.97rem;font-weight: 500;line-height: 1.4;">
+                                        I'm a paragraph. Click here to add your own text and edit me. I’m a great place
+                                        for you to tell a story and let your users know a little more about you.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <div style="margin-right: 15px;"><a href="#"><img src="../public/IMG/apple.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div><a href="#"><img src="../public/IMG/Google (1).png" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+                            <div
+                                class="fade-in-left OurGames__containerItem d-flex flex-column justify-content-center align-items-center">
+                                <div class=" d-flex  align-items-center " style="width: 280px;margin-bottom: 38px;">
+                                    <a href="#">
+                                        <div class="OurGames__containerItemIMG">
+                                            <img src=" ../public/IMG/shutterstock_1711821976.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_color1"
+                                            style="font-size: 1.2rem;font-weight: 800;margin-bottom: 8px;">Robotrix</h6>
+                                        <p class="text_color1" style="font-size: 1rem;font-weight: 300;">RPG - Free
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="width: 280px;margin-bottom: 38px;">
+                                    <p style="font-size: 0.97rem;font-weight: 500;line-height: 1.4;">
+                                        I'm a paragraph. Click here to add your own text and edit me. I’m a great place
+                                        for you to tell a story and let your users know a little more about you.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <div style="margin-right: 15px;"><a href="#"><img src="../public/IMG/apple.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div><a href="#"><img src="../public/IMG/Google (1).png" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex " style="margin-top: auto;">
+                        <div class="fade-in-left flex-grow-1 d-flex justify-content-center align-items-center">
+                            <div
+                                class="OurGames__containerItem d-flex flex-column justify-content-center align-items-center">
+                                <div class=" d-flex  align-items-center " style="width: 280px;margin-bottom: 38px;">
+                                    <a href="#">
+                                        <div class="OurGames__containerItemIMG">
+                                            <img src=" ../public/IMG/shutterstock_1015612369.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_color1"
+                                            style="font-size: 1.2rem;font-weight: 800;margin-bottom: 8px;">Treasure Box
+                                        </h6>
+                                        <p class="text_color1" style="font-size: 1rem;font-weight: 300;">Adventure -
+                                            Free
+                                        </p>
+                                    </div>
+                                </div>
+                                <div style="width: 280px;margin-bottom: 38px;">
+                                    <p style="font-size: 0.97rem;font-weight: 500;line-height: 1.4;">
+                                        I'm a paragraph. Click here to add your own text and edit me. I’m a great place
+                                        for you to tell a story and let your users know a little more about you.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <div style="margin-right: 15px;"><a href="#"><img src="../public/IMG/apple.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div><a href="#"><img src="../public/IMG/Google (1).png" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 d-flex justify-content-center align-items-center"
+                            style="position: relative; left: 0;top: 0;z-index: 9;">
+                            <img class="fade-in-right" src="../public/IMG/shutterstock_1580821522.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="JoinTeam">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0 JoinTeam__top"
+                    style="position: relative; background: rgb(218,57,43); height: 100%; overflow: hidden;">
+                    <div class="JoinTeam__topBG">
+                        <img style="
+                            width: 1262px;
+                            height: 750px;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                        " src="../public/IMG/c837a6_cbd9440d3fce436c913d12b16be55401~mv2.jpg" alt="">
+                    </div>
+                    <div class="JoinTeam__topTxT fade-in-element">
+                        <h6 style="font-size: 1.2rem; font-weight: 700; ">Join Our Team</h6>
+                        <h1 style="font-size: 3rem; font-weight: 900; margin: 27px 0;">It takes the world's best
+                            talent<br> to change
+                            the
+                            game.</h1>
+                        <div>
+                            <a class="JoinTeam__topLink text_color1" href="./Careers.html">Explore Careers</a>
+                        </div>
+                    </div>
+                    <div class="d-flex row">
+                        <div class="JoinTeam__topItem col-6"></div>
+                        <div class="JoinTeam__topItem d-flex justify-content-center col-6"
+                            style="position: static; z-index: 9;">
+                            <div class="align-self-end" style="transform: translateY(3px);">
+                                <img class="fade-in-down2" src="../public/IMG/shutterstock_1806326989.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 p-0 JoinTeam__Bottom  d-flex flex-row"
+                    style="background-color: rgba(39, 36, 67, 1); position: relative;">
+                    <div class="JoinTeam__BottomBG">
+                    </div>
+                    <div class="JoinTeam__BottomItem w-50 d-flex justify-content-center" style="position: relative;">
+                        <div id="JoinTeam_form" class="JoinTeam_form1">
+                            <form action="">
+                                <div>
+                                    <h1 class="text_color1 mb-5" style="font-size: 2rem;font-weight: 800;">
+                                        Get in Touch
+                                    </h1>
+                                </div>
+                                <div class="text_color1 mb-5" ">
+                                    <span style=" font-size: 1.1rem;font-weight: 500;">
+                                    I'm a paragraph. Click here to add your own text and edit me.
+                                    </span>
+                                </div>
+                                <div class="d-flex mb-5">
+                                    <div class="JoinTeam_input text_color1" style="margin-right: 30px;">
+                                        <label for="">First Name *</label>
+                                        <div>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="JoinTeam_input text_color1 ">
+                                        <label for="">Last Name *</label>
+                                        <div>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <div class="JoinTeam_input text_color1 ">
+                                        <label for="">Email *</label>
+                                        <div>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <div class="JoinTeam_input text_color1 ">
+                                        <label for="">Leave us a message...</label>
+                                        <div style="height: 92px;">
+                                            <textarea name="" id=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="JoinTeam_form1_buttom">
+                                    <button>Submit</button>
+                                </div>
+
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class=" JoinTeam__BottomItem d-flex justify-content-center align-items-center flex-grow-1"
+                        style="position: relative;z-index: 9;">
+                        <div class="JoinTeam_form2">
+                            <form action="">
+                                <div>
+                                    <h1 class="mb-5" style="font-size: 1.2rem;font-weight: 800;">
+                                        Subscribe to Our Newsletter
+                                    </h1>
+                                </div>
+                                <div class="mb-5">
+                                    <div class="JoinTeam_input ">
+                                        <label for="">Email *</label>
+                                        <div>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <div class="JoinTeam_form2_checkBox d-flex justify-content-center align-items-center"
+                                            style="margin-right: 0;">
+                                            <input type="checkbox" name="" id="subscribe_me">
+                                            <label for="subscribe_me">Yes, subscribe me to your newsletter.</label>
+                                        </div>
+                                        <div>
+                                            <a class="JoinTeam_form2_button text_color1" href="#">Join</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center"
+                        style="position: absolute; bottom: 5px;left: 0;">
+                        <div class="d-flex GameNavL align-items-center"
+                            style="background-color: #DA392B;  border-radius: 0 0 9px 9px;">
+                            <a style="
+                            text-decoration: none;
+                            color: #fff;
+                            padding: 18px 22px;
+                            font-size: 1.2rem;
+                            font-weight: 800;" href="#">
+                                Tripo Games
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center" style="padding: 20px 0;">
+                <div class="col-12 text-center">
+                    <h6 style="font-size: 1.4rem;font-weight: 500;">An Immersive Gaming Experience</h6>
+                </div>
+                <div class="footerl__line">
+
+                </div>
+                <div class="col-12">
+                    <div class="d-flex justify-content-between " style="padding: 0 160px;">
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Contact</h6>
+                            <a href="#">Info@mysite.com</a>
+                            <p>Tel: 123-456-7890</p>
+                            <p>500 Terry Francine St</p>
+                            <p>San Francisco, CA 94158</p>
+
+                        </div>
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Navigation</h6>
+                            <a href="#">Games</a>
+                            <a href="#">Careers</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Accessibility</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Shipping Policy</a>
+                            <a href="#">Refund Policy</a>
+                        </div>
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Social</h6>
+                            <a href="#">Discord</a>
+                            <a href="#">Twitch</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">YouTube</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Find Us On</h6>
+                            <a class="d-block p-0" href="#">
+                                <img src="../public/IMG/Google (1).png" alt="">
+                            </a>
+                            <a class="d-block p-0" href="#">
+                                <img src="../public/IMG/apple.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/JS/TripoGames.js"></script>
+    <script src="../public/Js/animation.js"></script>
+    <script src="../public/JS/Navbar.js"></script>
+
+</body>
+
+</html>

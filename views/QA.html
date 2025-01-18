@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+        @import url(../node_modules/fontawesome-free-6.6.0-web/css/fontawesome.min.css);
+
+        @import url(../public/CSS/reast.css);
+        @import url(../public/CSS/animation.css);
+        @import url(../public/CSS/all.css);
+    </style>
+</head>
+
+<body>
+
+    <div class="Navbar GameNav w-100" style="padding: 0px 93px; position :fixed">
+        <div class="d-flex GameNavL align-items-center" style="background-color: #DA392B;  border-radius: 0 0 9px 9px;">
+            <a style="
+                            text-decoration: none;
+                            color: #fff;
+                            padding: 18px 22px;
+                            font-size: 1.2rem;
+                            font-weight: 800;" href="./TripoGames.html">
+                Tripo Games
+            </a>
+        </div>
+        <div style="margin-left: auto;" class="nav GameNavR justify-content-end">
+            <nav>
+                <ul class="d-flex GameNavR__list">
+                    <li class="GameNavR__item GameNavR__item--active"><a href="./TripoGames.html">Home</a></li>
+
+                    <li class="GameNavR__item GameNavR__item--Dropdowns" style="font-size: 1.1rem; cursor: default; ">
+                        <a style="cursor: default;" href="#">Game</a>
+                        <ul class="GameNavR__itemUL">
+                            <li class="GameNavR__itemUL__li"><a href="./Games_Kipon.html">Kipon</a></li>
+                            <li class="GameNavR__itemUL__li"><a href="./Games_Robotrix.html">Robotrix</a></li>
+                            <li class="GameNavR__itemUL__li"><a href="./Games_TreasureBox.html">Treasure Box</a></li>
+                        </ul>
+                    </li>
+                    <li class="GameNavR__item"><a href="./Careers.html">Careers</a></li>
+                    <li class="GameNavR__item"><a href="./About.html">About</a></li>
+                    <li class="GameNavR__item"><a href="./TripoGames.html#JoinTeam_form">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="ApplyNow">
+        <div class="ApplyNow_top d-flex justify-content-between">
+            <div>
+                <h1>Join Our Team</h1>
+                <p>Submit Your Application</p>
+            </div>
+            <div style="cursor: pointer; font-size: 3rem;" class="ApplyNow_xmark"><i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="ApplyNow_form">
+            <form class="row" action="">
+                <div class="ApplyNow_input col-6">
+                    <label for="">First Name*</label>
+                    <input type="text">
+                </div>
+                <div class="ApplyNow_input col-6">
+                    <label for="">Last Name*
+                    </label>
+                    <input type="text">
+                </div>
+                <div class="ApplyNow_input col-6">
+                    <label for="">Email*</label>
+                    <input type="text">
+                </div>
+                <div class="ApplyNow_input col-6">
+                    <label for="">Phone</label>
+                    <input type="text">
+                </div>
+                <div class="ApplyNow_input col-12">
+                    <label for="">Position*</label>
+
+                    <div class="select-container" id="select-container">
+
+                        <div class="select-arrow">
+                            <div class="arrow--down"><i class="fa-solid fa-angle-down"></i></div>
+                            <div class="arrow--up"><i class="fa-solid fa-angle-up"></i></div>
+                        </div>
+                        <div class="ApplyNow_selected">select
+                        </div>
+                        <div class="ApplyNow_selected_items">
+                            <div>Community Manager</div>
+                            <div>QA Tester</div>
+                            <div>Game Designer</div>
+                            <div>Game Developer</div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="ApplyNow_input col-6">
+                    <label for="">CV URL*</label>
+                    <input type="text">
+                </div>
+                <div class="ApplyNow_input col-6">
+                    <label for="">LinkedIn URL</label>
+                    <input type="text">
+                </div>
+                <div class="ApplyNow_input col-12">
+                    <label for="">Any Comments</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                <div class="ApplyNow_submit col-12">
+                    <button>Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="QA_Tester " style="padding: 0px 90px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="QA_TesterBG ">
+                    <img src="../public/IMG/c837a6_ffa6083e84c54f9ab3658dbd98172787~mv2.jpg" alt="">
+                </div>
+                <div class="QA_TesterTXT ">
+                    <div style="margin-bottom: 54px;">
+                        <h6 class="fade-in-left">Careers</h6>
+                        <h1 class="fade-in-left">QA Tester</h1>
+                        <small class="fade-in-left">Location: San Francisco</small>
+                        <small class="fade-in-left">Employment Type: Contract</small>
+                    </div>
+                    <div class="QA_TesterTXT_btn fade-in-left"><a class="text_color1" href="javascript:void(0);">Apply
+                            Now</a></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="QA_content" style="padding: 0px 90px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 QA_contentL">
+                    <div class="fade-in-left">
+
+                        <h1>What You’ll Do</h1>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+                            Text”
+                            or double click me to add your own content and make changes to the font. Feel free to drag
+                            and
+                            drop me anywhere you like on your page. I’m a great place for you to tell a story and let
+                            your
+                            users know a little more about you.</p>
+                        <p>This is a great space to write long text about your company and your services. You can use
+                            this
+                            space to go into a little more detail about your company. Talk about your team and what
+                            services
+                            you provide. Tell your visitors the story of how you came up with the idea for your business
+                            and
+                            what makes you different from your competitors. Make your company stand out and show your
+                            visitors who you are. </p>
+                        <p>At Wix we’re passionate about making templates that allow you to build fabulous websites and
+                            it’s
+                            all thanks to the support and feedback from users like you! Keep up to date with New
+                            Releases
+                            and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and
+                            give
+                            us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch,
+                            head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more
+                            help
+                            you can simply type your questions into the Support Forum and get instant answers. To keep
+                            up to
+                            date with everything Wix, including tips and things we think are cool, just head to the Wix
+                            Blog!</p>
+                    </div>
+                </div>
+                <div class="col-6 QA_contentR">
+                    <div class="fade-in-left">
+
+                        <h1>
+                            Who You Are</h1>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+                            Text”
+                            or double click me to add your own content and make changes to the font. Feel free to drag
+                            and
+                            drop me anywhere you like on your page. I’m a great place for you to tell a story and let
+                            your
+                            users know a little more about you.</p>
+                        <p>This is a great space to write long text about your company and your services. You can use
+                            this
+                            space to go into a little more detail about your company. Talk about your team and what
+                            services
+                            you provide. Tell your visitors the story of how you came up with the idea for your business
+                            and
+                            what makes you different from your competitors. Make your company stand out and show your
+                            visitors who you are. </p>
+                        <p>At Wix we’re passionate about making templates that allow you to build fabulous websites and
+                            it’s
+                            all thanks to the support and feedback from users like you! Keep up to date with New
+                            Releases
+                            and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and
+                            give
+                            us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch,
+                            head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more
+                            help
+                            you can simply type your questions into the Support Forum and get instant answers. To keep
+                            up to
+                            date with everything Wix, including tips and things we think are cool, just head to the Wix
+                            Blog!</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="d-flex GameNavL align-items-center"
+                        style="width:166px;background-color: #DA392B;  border-radius: 0 0 9px 9px;">
+                        <a style="
+                                        text-decoration: none;
+                                        color: #fff;
+                                        padding: 18px 22px;
+                                        font-size: 1.2rem;
+                                        font-weight: 800;" href="./TripoGames.html">
+                            Tripo Games
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center" style="padding: 20px 0;">
+                <div class="col-12 text-center">
+                    <h6 style="font-size: 1.4rem;font-weight: 500;">An Immersive Gaming Experience</h6>
+                </div>
+                <div class="footerl__line">
+
+                </div>
+                <div class="col-12">
+                    <div class="d-flex justify-content-between " style="padding: 0 160px;">
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Contact</h6>
+                            <a href="#">Info@mysite.com</a>
+                            <p>Tel: 123-456-7890</p>
+                            <p>500 Terry Francine St</p>
+                            <p>San Francisco, CA 94158</p>
+
+                        </div>
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Navigation</h6>
+                            <a href="#">Games</a>
+                            <a href="#">Careers</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Accessibility</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Shipping Policy</a>
+                            <a href="#">Refund Policy</a>
+                        </div>
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Social</h6>
+                            <a href="#">Discord</a>
+                            <a href="#">Twitch</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">YouTube</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                        <div class="footer__ul">
+                            <h6 class="text_color1">Find Us On</h6>
+                            <a class="d-block p-0" href="#">
+                                <img src="../public/IMG/Google (1).png" alt="">
+                            </a>
+                            <a class="d-block p-0" href="#">
+                                <img src="../public/IMG/apple.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../public/JS/TripoGames.js"></script> -->
+    <script src="../public/JS/ApplyNow_form.js"></script>
+    <script src="../public/JS/Navbar.js"></script>
+    <script src="../public/Js/animation.js"></script>
+    <script src="../node_modules/fontawesome-free-6.6.0-web/js/all.js"></script>
+</body>
+
+</html>
