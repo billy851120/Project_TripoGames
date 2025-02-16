@@ -23,8 +23,8 @@ window.addEventListener('wheel', (event) => {
 
 function handleScroll(deltaY) {
     if (deltaY > 0) {
-        console.log("collapseUp:"+navState.collapseUp);
-        console.log("collapseDown:"+navState.collapseDown);
+        // console.log("collapseUp:"+navState.collapseUp);
+        // console.log("collapseDown:"+navState.collapseDown);
 
 
         // 滾輪向下滾動一次時執行
@@ -41,8 +41,8 @@ function handleScroll(deltaY) {
         }
 
     } else {
-        console.log("collapseUp:"+navState.collapseUp);
-        console.log("collapseDown:"+navState.collapseDown);
+        // console.log("collapseUp:"+navState.collapseUp);
+        // console.log("collapseDown:"+navState.collapseDown);
 
 
         // 滾輪向上滾動一次持執行
